@@ -2,6 +2,11 @@
 
 ### This site is designed to allow the exhibit managers to update....
 
+##### Important Links:
+[Deployed Manager's Portal **Site**](www.google.com)
+[GitHub Link](https://github.com/brittmagee/SEI23-Project2)
+[Project board](https://github.com/brittmagee/SEI23-Project2/projects/1)
+
 <dl>
   <dt>Tech Specs</dt>
     <dd>HTML5</dd>
@@ -23,8 +28,5 @@
 * ERDs
 * Deployed online and accessible to the public via Heroku
 
-[Deployed Manager's Portal **Site**](www.google.com)
-[GitHub Link](https://github.com/brittmagee/SEI23-Project2)
-[Project board](https://github.com/brittmagee/SEI23-Project2/projects/1)
 
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
