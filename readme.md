@@ -3,7 +3,7 @@
 ### This site is designed to allow the exhibit managers to update....
 
 <dl>
-  <dt>Tech Space</dt>
+  <dt>Tech Specs</dt>
     <dd>HTML5</dd>
     <dd>CSS</dd>
     <dd>JavaScript</dd>
@@ -13,6 +13,7 @@
     <dd>Mongoose</dd>
 </dl>
 
+#### This application has: 
 
 * Three models – one representing someone using the application (a user), one representing a collection of projects (a portfolio) and a third model for the individual projects (a project).
 * Complete RESTful routes for at least one resource (a project) with GET, POST, PUT, and DELETE.
