@@ -17,56 +17,56 @@ animalsRouter.get("/", function(req, res){
   // })
 })
 
-animalsRouter.get("/newIssue", function(req, res) {
-  animalsApi.exampleIssue().then((newIssue) => {
-    res.send(newIssue)
+animalsRouter.get("/example", function(req, res) {
+  animalsApi.exampleAnimal().then((newMove) => {
+    res.send(newMove)
   })
 })
 
-animalsRouter.get("/newIssueForm", (req, res) => {
-  res.render("./issues/newIssueForm", {})
+animalsRouter.get("/newMove", (req, res) => {
+  res.render("./animals/newMove", {})
 })
 
-animalsRouter.get("/:issueId/editIssueForm", function(req, res){
-  const singleIssue = animalsApi.getIssue(req.params.issueId).then((entireIssue) => {
-    res.render("./issues/editIssueForm", {entireIssue})
+animalsRouter.get("/:moveId/editMove", function(req, res){
+  const singleMove = animalsApi.getAnimalMove(req.params.moveId).then((allMoves) => {
+    res.render("./animals/editMove", {allMoves})
   })
 })
 
 
-animalsRouter.get("/:issueId", function(req,res){
-  animalsApi.getIssue(req.params.issueId).then(singleIssue => {
-    console.log(singleIssue)
-    res.render("./issues/issue", { singleIssue });
+animalsRouter.get("/:moveId", function(req,res){
+  animalsApi.getAnimalMove(req.params.moveId).then(singleMove => {
+    console.log(singleMove)
+    res.render("./animals/move", { singleMove });
   })
-  // animalsApi.getIssue(req.params.issueId).then(issue => {
-  //     res.send(issue)
+  // animalsApi.getIssue(req.params.moveId).then(singleMove => {
+  //     res.send(singleMove)
   //   })
 })
 
 
 animalsRouter.post("/", function(req, res){
-  animalsApi.addNewIssue(req.body).then((newData) => {
-    // res.send(newData)
-    console.log(newData)
-      res.redirect("/issues")
+  animalsApi.addNewAnimalMove(req.body).then((newEntry) => {
+    // res.send(newEntry)
+    console.log(newEntry)
+      res.redirect("/ManagersPortal")
     })
 })
 
-animalsRouter.put("/:issueId", function(req,res){
-  animalsApi.updateIssue(req.params.issueId, req.body).then(() => {
-    res.redirect("/issues")
+animalsRouter.put("/:moveId", function(req,res){
+  animalsApi.updateAnimalMove(req.params.moveId, req.body).then(() => {
+    res.redirect("/ManagersPortal")
     })
 
-    // animalsApi.updateIssue().then(() => {
+    // animalsApi.updateAnimalMove().then(() => {
     //   res.send("/");
     // })
 })
 
 
-animalsRouter.delete("/:issueId", function(req,res){
-  animalsApi.deleteIssue(req.params.issueId).then(() => {
-    res.redirect("/issues")
+animalsRouter.delete("/:moveId", function(req,res){
+  animalsApi.deleteAnimalMove(req.params.moveId).then(() => {
+    res.redirect("/ManagersPortal")
   })
 })
 
