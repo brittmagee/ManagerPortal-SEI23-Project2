@@ -1,0 +1,18 @@
+<h1>All Upcoming Events </h1>
+
+<form method="GET" action="/events/new">
+    <input type="submit" value="New Event" />
+</form>
+
+<ul>
+    {{!-- this will create an li for EACH item --}}
+    {{#each allEvents}} 
+    {{!-- above pass through --}}
+    <li>
+        {{!-- print out type of event you are looking for  --}}
+        {{!-- {{type}} --}}
+        <a href ="events/{{_id}}">{{type}}</a>  
+        {{!-- {{type}} --}}
+    </li>
+    {{/each}}
+</ul>
