@@ -1,12 +1,12 @@
 // Step 1: Import needed packages
-const express = require("express")
-const app = express()
+const express        = require("express")
+const app            = express()
 const methodOverride = require("method-override")
-const hbs = require("hbs")
+const hbs            = require("hbs")
 
 // Step 2: import routers from controllers/
-const { animalRouter } = require("./controllers/animalsC.js")
-const { eventRouter } = require("./controllers/eventsC.js")
+const { animalRouter }   = require("./controllers/animalsC.js")
+const { eventRouter }    = require("./controllers/eventsC.js")
 const { feedbackRouter } = require("./controllers/feedbackC.js")
 
 // Step 3:: Register middleware...
