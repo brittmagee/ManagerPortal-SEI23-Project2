@@ -1,0 +1,23 @@
+<div>
+    <p>Event</p>
+    {{singleEvent.date}}
+    {{singleEvent.type}}
+    {{singleEvent.attendees}} 
+    {{singleEvent.title}} 
+    {{singleEvent.description}} 
+    {{singleEvent.location}} 
+    {{singleEvent.staff}} 
+</div>
+
+<form method="GET" action="/events/{{singleEvent._id}}/edit">
+    <input type="submit" value="Edit" />
+</form>
+
+<form method="POST" action="/events/{{singleEvent._id}}?_method=DELETE">
+    <input type="submit" value="Delete"/>
+</form>
+
+
+<form method="GET" action="/events">
+    <input type="submit" value="Back to Main Events List" />
+</form>
