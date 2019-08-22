@@ -17,17 +17,17 @@ animalsRouter.get("/", function(req, res){
   // })
 })
 
-animalsRouter.get("/example", function(req, res) {
+animalsRouter.get("/exampleAnimal", function(req, res) {
   animalsApi.exampleAnimal().then((newMove) => {
     res.send(newMove)
   })
 })
 
-animalsRouter.get("/newMove", (req, res) => {
+animalsRouter.get("/new", (req, res) => {
   res.render("./animals/newMove", {})
 })
 
-animalsRouter.get("/:moveId/editMove", function(req, res){
+animalsRouter.get("/:moveId/edit", function(req, res){
   const singleMove = animalsApi.getAnimalMove(req.params.moveId).then((allMoves) => {
     res.render("./animals/editMove", {allMoves})
   })
@@ -49,13 +49,13 @@ animalsRouter.post("/", function(req, res){
   animalsApi.addNewAnimalMove(req.body).then((newEntry) => {
     // res.send(newEntry)
     console.log(newEntry)
-      res.redirect("/ManagersPortal")
+      res.redirect("/exhibit")
     })
 })
 
 animalsRouter.put("/:moveId", function(req,res){
   animalsApi.updateAnimalMove(req.params.moveId, req.body).then(() => {
-    res.redirect("/ManagersPortal")
+    res.redirect("/exhibit")
     })
 
     // animalsApi.updateAnimalMove().then(() => {
@@ -66,7 +66,7 @@ animalsRouter.put("/:moveId", function(req,res){
 
 animalsRouter.delete("/:moveId", function(req,res){
   animalsApi.deleteAnimalMove(req.params.moveId).then(() => {
-    res.redirect("/ManagersPortal")
+    res.redirect("/exhibit")
   })
 })
 

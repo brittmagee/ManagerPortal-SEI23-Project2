@@ -5,8 +5,9 @@ const methodOverride = require("method-override")
 const hbs = require("hbs")
 
 // Step 2: import routers from controllers/
-const { managerRouter } = require("./controllers/routes.js")
-
+const { animalRouter } = require("./controllers/animalsC.js")
+const { eventRouter } = require("./controllers/eventsC.js")
+const { feedbackRouter } = require("./controllers/feedbackC.js")
 
 // Step 3:: Register middleware...
 //Step 3.a:: ...to parse the body of the HTTP requests from a URL encoded string 
@@ -25,7 +26,9 @@ app.use(express.static(__dirname+"/public"))
 app.set("view engine", "hbs")
 
 // Step 4: add router for the application to use. The first argument is a prefix to all the paths defined in the router.
-app.use('/ManagersPortal', managerRouter)
+app.use('/exhibit', animalRouter)
+app.use('/events', eventRouter)
+app.use('/feedback', feedbackRouter)
 
 // Step 5: Set the port the server is to run on
 //NOTE: keep these lines at the bottom of the file 
