@@ -31,7 +31,7 @@ const exampleFeedback = () => {
 }
 
 //retrieve all feedback from database
-const getFeedbak = () => {
+const getFeedback = () => {
     return feedbackCollection.find()
     //note: the .find is a Promise
 }
@@ -60,7 +60,7 @@ const deleteFeedback = (feedbackId) => {
 
 module.exports = {
     exampleFeedback,
-    getFeedbak,
+    getFeedback,
     getOneFeedback,
     addFeedback,
     updateFeedback,
