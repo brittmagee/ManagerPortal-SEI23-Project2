@@ -1,0 +1,23 @@
+<div>
+    <p>Move</p>
+    {{singleMove.type}}
+    {{singleMove.species}}
+    {{singleMove.quanity}} 
+    {{singleMove.exhibit}} 
+    {{singleMove.date}} 
+    {{singleMove.status}} 
+    {{singleMove.priority}} 
+</div>
+
+<form method="GET" action="/exhibit/{{singleMove._id}}/edit">
+    <input type="submit" value="Edit" />
+</form>
+
+<form method="POST" action="/exhibit/{{singleMove._id}}?_method=DELETE">
+    <input type="submit" value="Delete"/>
+</form>
+
+
+<form method="GET" action="/exhibit">
+    <input type="submit" value="Back to Main List" />
+</form>
