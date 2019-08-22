@@ -1,0 +1,57 @@
+
+
+
+      
+
+        status: "Pending",
+        priority: "P3",
+
+<form method="POST" action="/exhibit">
+    <label for="type">Type</label>
+    <input type="text" name="type"/>
+
+    <label for="species">Species</label>
+    <input type="text" name="type"/>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity"/>
+
+    {{!-- Dropdown menu for exhibit list --}}
+    <label for="exhibit">Exhibit</label>
+      <select name="exhibit" value="Select...">
+        <option value="Aquanaut Adventure">Aquanaut Adventure</option>
+        <option value="Cold Water Quest">In Progress</option>
+        <option value="Dolphin Coast">Shelved</option>
+        <option value="Ocean Voyager">Completed</option>
+        <option value="River Scout">Completed</option>
+        <option value="Pier 225">Completed</option>
+        <option value="Tropical Diver">Completed</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input type="date" name="date"/>
+
+        {{!-- Dropdown menu for status --}}
+    <label for="Status">Status</label>
+      <select name="status" value="Select...">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Shelved">Shelved</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+            {{!-- Dropdown menu for priority --}}
+    <label for="Priority">Priority</label>
+       <select name="priority" value="Select..."> 
+        <option value="Urgent">P1</option>
+        <option value="High">P2</option>
+        <option value="Medium">P3</option>
+        <option value="Low">P4</option>
+    </select>
+
+    <input type="submit" value="Submit Issue" />
+</form>
+
+<form method="GET" action="/exhibit">
+    <input type="submit" value="Back to Main List" />
+</form>

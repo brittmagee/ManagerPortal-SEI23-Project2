@@ -6,7 +6,7 @@ const animalsSchema = mongoose.Schema(
     {
       //make sure String, Number and Boolean are capitalized 
       type: String,
-      name: String,
+      species: String,
       quantity: Number,
       exhibit: String,
       date: Date,
@@ -21,7 +21,7 @@ const exampleAnimal = () => {
     //note: the .create is a Promise
   return animalsCollection.create({
         type: "Fish",
-        name: "Blue Tang",
+        species: "Blue Tang",
         quantity: 25,
         exhibit: "Ocean Voyager",
         date: "2019-09-15",

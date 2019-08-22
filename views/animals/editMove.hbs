@@ -1,0 +1,31 @@
+<form method="POST" action="/exhibit/{{allMoves._id}}?_method=PUT">
+    <label for="type">Type</label>
+    <input type="text" name="type" value="{{newMove.type}}"/> 
+
+    <label for="createdAt">Date</label>
+    <input type="date" name="createdAt" value="{{newIssueForm.date}}"/>
+
+            {{!-- Dropdown menu for status --}}
+    <label for="Status">Status</label>
+      <select name="status" value="{{newIssueForm.status}}">
+        <option value="Pending">Pending</option>
+        <option value="In Progress">In Progress</option>
+        <option value="Shelved">Shelved</option>
+        <option value="Completed">Completed</option>
+    </select>
+
+              {{!-- Dropdown menu for priority --}}
+    <label for="priority">Priority</label>
+      <select name="Priority" value="{{newIssueForm.priority}}">
+        <option value="Urgent">P1</option>
+        <option value="High">P2</option>
+        <option value="Medium">P3</option>
+        <option value="Low">P4</option>
+    </select>
+
+    <input type="submit" value="Update Issue" />
+</form>
+
+<form method="POST" action="/issues/{{issue._id}}?method=DELETE">
+    <input type="submit" value="Delete Issue"/>
+</form>
