@@ -1,13 +1,31 @@
 <form method="POST" action="/exhibit/{{allMoves._id}}?_method=PUT">
     <label for="type">Type</label>
-    <input type="text" name="type" value="{{newMove.type}}"/> 
+    <input type="text" name="type" value="{{newMove.type}}"/>
 
-    <label for="createdAt">Date</label>
-    <input type="date" name="createdAt" value="{{newIssueForm.date}}"/>
+    <label for="species">Species</label>
+    <input type="text" name="type" value="{{newMove.species}}"/>
+
+    <label for="quantity">Quantity</label>
+    <input type="number" name="quantity" value="{{newMove.quantity}}"/>
+
+        {{!-- Dropdown menu for exhibit list --}}
+    <label for="exhibit">Exhibit</label>
+      <select name="exhibit" value="{{newMove.exhibit}}">
+        <option value="Aquanaut Adventure">Aquanaut Adventure</option>
+        <option value="Cold Water Quest">In Progress</option>
+        <option value="Dolphin Coast">Shelved</option>
+        <option value="Ocean Voyager">Completed</option>
+        <option value="River Scout">Completed</option>
+        <option value="Pier 225">Completed</option>
+        <option value="Tropical Diver">Completed</option>
+    </select>
+
+    <label for="date">Date</label>
+    <input type="date" name="date" value="{{newMove.date}}"/>
 
             {{!-- Dropdown menu for status --}}
-    <label for="Status">Status</label>
-      <select name="status" value="{{newIssueForm.status}}">
+    <label for="status">Status</label>
+      <select name="status" value="{{newMove.status}}">
         <option value="Pending">Pending</option>
         <option value="In Progress">In Progress</option>
         <option value="Shelved">Shelved</option>
@@ -16,16 +34,16 @@
 
               {{!-- Dropdown menu for priority --}}
     <label for="priority">Priority</label>
-      <select name="Priority" value="{{newIssueForm.priority}}">
+      <select name="Priority" value="{{newMove.priority}}">
         <option value="Urgent">P1</option>
         <option value="High">P2</option>
         <option value="Medium">P3</option>
         <option value="Low">P4</option>
     </select>
 
-    <input type="submit" value="Update Issue" />
+    <input type="submit" value="Update Move" />
 </form>
 
-<form method="POST" action="/issues/{{issue._id}}?method=DELETE">
-    <input type="submit" value="Delete Issue"/>
+<form method="POST" action="/exhibit/{{move._id}}?method=DELETE">
+    <input type="submit" value="Delete"/>
 </form>
