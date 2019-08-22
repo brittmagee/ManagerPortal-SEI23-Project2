@@ -36,13 +36,13 @@ const getAllAnimalMoves = () => {
     //note: the .find is a Promise
 }
 
-//retrieve a single animal move from the DB
+//retrieve a single animal move from the database
 const getAnimalMove = (moveId) => {
     return animalsCollection.findById(moveId)
     //note: the .findById is a Promise
 }
 
-//add new move to the DB
+//add new move to the database
 const addNewAnimalMove = (newMove) => {
     console.log(newMove)
    return animalsCollection.create(newMove)
@@ -53,7 +53,7 @@ const updateAnimalMove = (moveId, updatedMove) => {
     return animalsCollection.findByIdAndUpdate(moveId, updatedMove)
 }
 
-//deletes move with moveId from DB
+//deletes move with moveId from database
 const deleteAnimalMove = (moveId) => {
     return animalsCollection.findByIdAndDelete(moveId);
 }
