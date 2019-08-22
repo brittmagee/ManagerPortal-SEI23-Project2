@@ -3,7 +3,7 @@
 ### This site is designed to allow the exhibit managers to update....
 
 ##### Important Links:
-[Deployed Manager's Portal **Site**](www.google.com)
+[**Deployed Site**](www.google.com)
 
 [GitHub Link](https://github.com/brittmagee/SEI23-Project2)
 
@@ -30,5 +30,5 @@
 * ERDs
 * Deployed online and accessible to the public via Heroku
 
-
+### Wireframe & ERD Images
 ![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
