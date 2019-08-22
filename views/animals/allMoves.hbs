@@ -1,0 +1,18 @@
+<h1>All Issues</h1>
+
+<form method="GET" action="/exhibit/new">
+    <input type="submit" value="New Move" />
+</form>
+
+<ul>
+    {{!-- this will create an li for EACH item --}}
+    {{#each allAnimalMoves}} 
+    {{!-- above pass through --}}
+    <li>
+        {{!-- print out name of species you are looking for  --}}
+        {{!-- {{name}} --}}
+        <a href ="exhibit/{{_id}}">{{species}}</a>  
+        {{!-- {{species}} --}}
+    </li>
+    {{/each}}
+</ul>
