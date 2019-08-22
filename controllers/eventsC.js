@@ -54,7 +54,7 @@ eventsRouter.post("/", function(req, res){
 })
 
 eventsRouter.put("/:moveId", function(req,res){
-    eventsApi.updateAnimalMove(req.params.moveId, req.body).then(() => {
+    eventsApi.updateEvent(req.params.moveId, req.body).then(() => {
     res.redirect("/events")
     })
 
@@ -65,7 +65,7 @@ eventsRouter.put("/:moveId", function(req,res){
 
 
 eventsRouter.delete("/:moveId", function(req,res){
-    eventsApi.deleteAnimalMove(req.params.moveId).then(() => {
+    eventsApi.deleteEvent(req.params.moveId).then(() => {
     res.redirect("/events")
   })
 })
