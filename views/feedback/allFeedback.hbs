@@ -1,0 +1,18 @@
+<h1>All Feedback</h1>
+
+<form method="GET" action="/feedback/new">
+    <input type="submit" value="New Feedback" />
+</form>
+
+<ul>
+    {{!-- this will create an li for EACH item --}}
+    {{#each allFeedback}} 
+    {{!-- above pass through --}}
+    <li>
+        {{!-- print out type of event you are looking for  --}}
+        {{!-- {{type}} --}}
+        <a href ="feedback/{{_id}}">{{title}}</a>  
+        {{!-- {{type}} --}}
+    </li>
+    {{/each}}
+</ul>
