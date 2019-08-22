@@ -1,6 +1,13 @@
 <form method="POST" action="/exhibit">
+    {{!-- Dropdown menu for animal type --}}
     <label for="type">Type</label>
-    <input type="text" name="type"/>
+      <select name="type" value="Select...">
+        <option value="Birds">Birds</option>
+        <option value="Fish">Fish</option>
+        <option value="Invertebrates">Invertebrates</option>
+        <option value="Mammals">Mammals</option>
+        <option value="Sharks & Rays">Sharks & Rays</option>
+    </select>
 
     <label for="species">Species</label>
     <input type="text" name="species"/>
