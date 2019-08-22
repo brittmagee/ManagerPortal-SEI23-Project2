@@ -9,8 +9,8 @@ const eventsRouter = express.Router()
 
 // Step 4: Put all request handlers here
 eventsRouter.get("/", function(req, res){
-    eventsApi.getEvents().then(allEvents => {
-    res.render("./events/allEvents", {allEvents});
+    eventsApi.getEvents().then(allAquariumEvents => {
+    res.render("./events/allEvents", {allAquariumEvents});
   })
   // eventsApi.getEvents().then(allEvents => {
   //   res.send(allEvents)
