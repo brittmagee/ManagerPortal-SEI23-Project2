@@ -1,0 +1,23 @@
+<div>
+    <p>Feedback</p>
+    {{singleFeedback.date}}
+    {{singleFeedback.type}}
+    {{singleFeedback.title}} 
+    {{singleFeedback.description}} 
+    {{singleFeedback.staff}} 
+    {{singleFeedback.status}} 
+    {{singleFeedback.priority}} 
+</div>
+
+<form method="GET" action="/feedback/{{singleFeedback._id}}/edit">
+    <input type="submit" value="Edit" />
+</form>
+
+<form method="POST" action="/feedback/{{singleFeedback._id}}?_method=DELETE">
+    <input type="submit" value="Delete"/>
+</form>
+
+
+<form method="GET" action="/feedback">
+    <input type="submit" value="Back to Feedback List" />
+</form>
