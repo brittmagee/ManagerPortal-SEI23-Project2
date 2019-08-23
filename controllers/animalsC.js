@@ -28,7 +28,7 @@ animalsRouter.get("/new", (req, res) => {
 })
 
 animalsRouter.get("/:moveId/edit", function(req, res){
-  const singleMove = animalsApi.getAnimalMove(req.params.moveId).then((allMoves) => {
+  animalsApi.getAnimalMove(req.params.moveId).then((allMoves) => {
     res.render("./animals/editMove", {allMoves})
   })
 })
