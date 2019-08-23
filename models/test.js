@@ -1,6 +1,6 @@
 const animalsAPI = require("./animals.js");
-// const issueAPI = require("./events.js");
-// const issueAPI = require("./feedback.js");
+const eventsAPI = require("./events.js");
+// const feedbackAPI = require("./feedback.js");
 
 //get all issues in the DB
 animalsAPI.exampleAnimal().then((newMove) => {
@@ -36,10 +36,20 @@ animalsAPI.addNewAnimalMove({
 //removes all the empty items
 // animalsAPI.getAllAnimalMoves().then((allMoves) => {
 //     Promise.all(
-//         allMoves.filter(move => !move.name).map(animalsAPI.deleteAnimalMove)
+//         allMoves.filter(move => !move.type).map(animalsAPI.deleteAnimalMove)
 //     ).then((deleteMove) => {
 //         console.log("all done!");
 //         console.log(deleteMove);
+//     });
+// })
+
+//removes all the empty items
+// eventsAPI.getEvents().then((allAquariumEvents) => {
+//     Promise.all(
+//         allAquariumEvents.filter(event => !event.title).map(eventsAPI.deleteEvent)
+//     ).then((deleteEvent) => {
+//                 console.log("all done!");
+//                 console.log(deleteEvent);
 //     });
 // })
 
