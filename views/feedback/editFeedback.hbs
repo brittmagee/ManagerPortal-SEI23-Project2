@@ -5,10 +5,10 @@
 
     {{!-- Dropdown menu for feedback type --}}
     <label for="type">Type</label>
-      <select name="type" value="{{editFeedback.type}}">
-        <option value="Exhibit">Exhibit</option>
-        <option value="Event">Event</option>
-        <option value="Other">Other</option>
+      <select name="type">
+        <option value="Exhibit" {{dropdownHelper editFeedback.type "Exhibit"}}>Exhibit</option>
+        <option value="Event" {{dropdownHelper editFeedback.type "Event"}}>Event</option>
+        <option value="Other" {{dropdownHelper editFeedback.type "Other"}}>Other</option>
     </select>
 
     <label for="title">Title</label>
@@ -22,20 +22,20 @@
 
         {{!-- Dropdown menu for status --}}
     <label for="status">Status</label>
-      <select name="status" value="{{editFeedback.status}}">
-        <option value="Pending">Pending</option>
-        <option value="In Progress">In Progress</option>
-        <option value="Shelved">Shelved</option>
-        <option value="Completed">Completed</option>
+      <select name="status">
+        <option value="Pending" {{dropdownHelper editFeedback.status "Pending"}}>Pending</option>
+        <option value="In Progress" {{dropdownHelper editFeedback.status "In Progress"}}>In Progress</option>
+        <option value="Shelved" {{dropdownHelper editFeedback.status "Shelved"}}>Shelved</option>
+        <option value="Completed" {{dropdownHelper editFeedback.status "Completed"}}>Completed</option>
     </select>
 
             {{!-- Dropdown menu for priority --}}
     <label for="priority">Priority</label>
-       <select name="priority" value="{{editFeedback.priority}}"> 
-        <option value="Urgent">P1</option>
-        <option value="High">P2</option>
-        <option value="Medium">P3</option>
-        <option value="Low">P4</option>
+       <select name="priority"> 
+        <option value="Urgent" {{dropdownHelper editFeedback.priority "Urgent"}}>P1</option>
+        <option value="High" {{dropdownHelper editFeedback.priority "High"}}>P2</option>
+        <option value="Medium" {{dropdownHelper editFeedback.priority "Medium"}}>P3</option>
+        <option value="Low" {{dropdownHelper editFeedback.priority "Low"}}>P4</option>
     </select>
 
     <input type="submit" value="Update Feedback" />

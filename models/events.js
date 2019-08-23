@@ -5,7 +5,7 @@ const mongoose = require("./connection.js")
 const eventsSchema = mongoose.Schema(
     {
       //make sure String, Number and Boolean are capitalized 
-      date: Date,
+      date: String,
       type: String,
       attendees: Number,
       title: String,

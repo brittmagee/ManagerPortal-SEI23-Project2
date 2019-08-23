@@ -2,12 +2,12 @@
 
         {{!-- Dropdown menu for animal type --}}
     <label for="type">Type</label>
-      <select name="type" value="{{editMoves.type}}">
-        <option value="Birds">Birds</option>
-        <option value="Fish">Fish</option>
-        <option value="Invertebrates">Invertebrates</option>
-        <option value="Mammals">Mammals</option>
-        <option value="Sharks & Rays">Sharks & Rays</option>
+      <select name="type">
+        <option value="Birds" {{dropdownHelper editMoves.type "Birds"}}>Birds</option>
+        <option value="Fish" {{dropdownHelper editMoves.type "Fish"}}>Fish</option>
+        <option value="Invertebrates" {{dropdownHelper editMoves.type "Invertebrates"}}>Invertebrates</option>
+        <option value="Mammals" {{dropdownHelper editMoves.type "Mammals"}}>Mammals</option>
+        <option value="Sharks & Rays" {{dropdownHelper editMoves.type "Sharks & Rays"}}>Sharks & Rays</option>
     </select>
 
     <label for="species">Species</label>
@@ -18,14 +18,14 @@
 
         {{!-- Dropdown menu for exhibit list --}}
     <label for="exhibit">Exhibit</label>
-      <select name="exhibit" value="{{editMoves.exhibit}}">
-        <option value="Aquanaut Adventure">Aquanaut Adventure</option>
-        <option value="Cold Water Quest">Cold Water Quest</option>
-        <option value="Dolphin Coast">Dolphin Coast</option>
-        <option value="Ocean Voyager">Ocean Voyager</option>
-        <option value="River Scout">River Scout</option>
-        <option value="Pier 225">Pier 225</option>
-        <option value="Tropical Diver">Tropical Diver</option>
+      <select name="exhibit">
+        <option value="Aquanaut Adventure" {{dropdownHelper editMoves.exhibit "Aquanaut Adventure"}}>Aquanaut Adventure</option>
+        <option value="Cold Water Quest" {{dropdownHelper editMoves.exhibit "Cold Water Quest"}}>Cold Water Quest</option>
+        <option value="Dolphin Coast" {{dropdownHelper editMoves.exhibit "Dolphin Coast"}}>Dolphin Coast</option>
+        <option value="Ocean Voyager" {{dropdownHelper editMoves.exhibit "Ocean Voayager"}}>Ocean Voyager</option>
+        <option value="River Scout" {{dropdownHelper editMoves.exhibit "River Scout"}}>River Scout</option>
+        <option value="Pier 225" {{dropdownHelper editMoves.exhibit "Pier 225"}}>Pier 225</option>
+        <option value="Tropical Diver" {{dropdownHelper editMoves.exhibit "Tropical Diver"}}>Tropical Diver</option>
     </select>
 
     <label for="date">Date</label>
@@ -33,20 +33,20 @@
 
             {{!-- Dropdown menu for status --}}
     <label for="status">Status</label>
-      <select name="status" value="{{editMoves.status}}">
-        <option value="Pending">Pending</option>
-        <option value="In Progress">In Progress</option>
-        <option value="Shelved">Shelved</option>
-        <option value="Completed">Completed</option>
+      <select name="status">
+        <option value="Pending" {{dropdownHelper editMoves.status "Pending"}}>Pending</option>
+        <option value="In Progress" {{dropdownHelper editMoves.status "In Progress"}}>In Progress</option>
+        <option value="Shelved" {{dropdownHelper editMoves.status "Shelved"}}>Shelved</option>
+        <option value="Completed" {{dropdownHelper editMoves.status "Completed"}}>Completed</option>
     </select>
 
               {{!-- Dropdown menu for priority --}}
     <label for="priority">Priority</label>
-      <select name="Priority" value="{{editMoves.priority}}">
-        <option value="Urgent">P1</option>
-        <option value="High">P2</option>
-        <option value="Medium">P3</option>
-        <option value="Low">P4</option>
+      <select name="Priority">
+        <option value="Urgent" {{dropdownHelper editMoves.priority "P1"}}>P1</option>
+        <option value="High" {{dropdownHelper editMoves.priority "P2"}}>P2</option>
+        <option value="Medium" {{dropdownHelper editMoves.priority "P3"}}>P3</option>
+        <option value="Low" {{dropdownHelper editMoves.priority "P4"}}>P4</option>
     </select>
 
     <input type="submit" value="Update Move" />

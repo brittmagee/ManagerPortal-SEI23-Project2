@@ -1,8 +1,9 @@
 // Step 1: Import needed packages
-const express        = require("express")
+const express  = require("express")
 const app            = express()
 const methodOverride = require("method-override")
 const hbs            = require("hbs")
+const hbsHepler = require("./hbsHelpers/hbsHelpers")
 
 // Step 2: import routers from controllers/
 const { animalsRouter }   = require("./controllers/animalsC.js")

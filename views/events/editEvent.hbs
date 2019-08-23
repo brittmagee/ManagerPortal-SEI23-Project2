@@ -5,12 +5,12 @@
 
     {{!-- Dropdown menu for event type --}}
     <label for="type">Type</label>
-      <select name="type" value="{{editEvents.type}}">
-        <option value="Education">Education</option>
-        <option value="Recurring">Recurring</option>
-        <option value="Wedding">Wedding</option>
-        <option value="Corporate">Corporate</option>
-        <option value="Holiday">Holiday</option>
+      <select name="type">
+        <option value="Education" {{dropdownHelper editEvents.type "Education"}}>Education</option>
+        <option value="Recurring"{{dropdownHelper editEvents.type "Recurring"}}>Recurring</option>
+        <option value="Wedding" {{dropdownHelper editEvents.type "Wedding"}}>Wedding</option>
+        <option value="Corporate" {{dropdownHelper editEvents.type "Corporate"}}>Corporate</option>
+        <option value="Holiday" {{dropdownHelper editEvents.type "Holiday"}}>Holiday</option>
     </select>
 
     <label for="attendees">Attendees</label>
@@ -24,14 +24,14 @@
 
     {{!-- Dropdown menu for exhibit list --}}
     <label for="location">Exhibit</label>
-      <select name="location" value="{{editEvents.exhibit}}">
-        <option value="Ocean's Ballroom">Ocean's Ballroom</option>
-        <option value="Atlantic Ballroom">Atlantic Ballroom</option>
-        <option value="Pacific Ballroom">Pacific Ballroom</option>
-        <option value="Artic Ballroom">Artic Ballroom</option>
-        <option value="Entire Aquarium Event">Entire Aquarium Event</option>
-        <option value="Gallery Event">Gallery Event</option>
-        <option value="Pemberton Place">Pemberton Place</option>
+      <select name="location">
+        <option value="Ocean's Ballroom" {{dropdownHelper editEvents.location "Ocean's Ballroom"}}>Ocean's Ballroom</option>
+        <option value="Atlantic Ballroom" {{dropdownHelper editEvents.location "Atlantic Ballroom"}}>Atlantic Ballroom</option>
+        <option value="Pacific Ballroom" {{dropdownHelper editEvents.location "Pacific Ballroom"}}>Pacific Ballroom</option>
+        <option value="Artic Ballroom" {{dropdownHelper editEvents.location "Artic Ballroom"}}>Artic Ballroom</option>
+        <option value="Entire Aquarium Event" {{dropdownHelper editEvents.location "Entire Aquarium Event"}}>Entire Aquarium Event</option>
+        <option value="Gallery Event" {{dropdownHelper editEvents.location "Gallery Event"}}>Gallery Event</option>
+        <option value="Pemberton Place" {{dropdownHelper editEvents.location "Pemberton Place"}}>Pemberton Place</option>
     </select>
 
     <label for="staff">Staff Needed</label>

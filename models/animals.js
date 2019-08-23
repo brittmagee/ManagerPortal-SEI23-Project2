@@ -9,7 +9,7 @@ const animalsSchema = mongoose.Schema(
       species: String,
       quantity: Number,
       exhibit: String,
-      date: Date,
+      date: String,
       status: String,
       priority: String,
     }
