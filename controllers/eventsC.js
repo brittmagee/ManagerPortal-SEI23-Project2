@@ -28,8 +28,8 @@ eventsRouter.get("/new", (req, res) => {
 })
 
 eventsRouter.get("/:eventId/edit", function(req, res){
-  eventsApi.getOneEvent(req.params.eventId).then((allEvents) => {
-    res.render("./events/editEvent", {allEvents})
+  eventsApi.getOneEvent(req.params.eventId).then((editEvents) => {
+    res.render("./events/editEvent", {editEvents})
   })
 })
 

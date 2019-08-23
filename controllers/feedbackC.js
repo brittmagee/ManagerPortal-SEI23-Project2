@@ -28,8 +28,8 @@ feedbackRouter.get("/new", (req, res) => {
 })
 
 feedbackRouter.get("/:feedbackId/edit", function(req, res){
-  feedbackApi.getOneFeedback(req.params.feedbackId).then((allFeedback) => {
-    res.render("./feedback/editFeedback", {allFeedback})
+  feedbackApi.getOneFeedback(req.params.feedbackId).then((editFeedback) => {
+    res.render("./feedback/editFeedback", {editFeedback})
   })
 })
 

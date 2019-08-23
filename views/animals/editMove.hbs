@@ -1,8 +1,8 @@
-<form method="POST" action="/exhibit/{{allMoves._id}}?_method=PUT">
+<form method="POST" action="/exhibit/{{editMoves._id}}?_method=PUT">
 
         {{!-- Dropdown menu for animal type --}}
     <label for="type">Type</label>
-      <select name="type" value="{{newMove.type}}">
+      <select name="type" value="{{editMoves.type}}">
         <option value="Birds">Birds</option>
         <option value="Fish">Fish</option>
         <option value="Invertebrates">Invertebrates</option>
@@ -11,14 +11,14 @@
     </select>
 
     <label for="species">Species</label>
-    <input type="text" name="species" value="{{newMove.species}}"/>
+    <input type="text" name="species" value="{{editMoves.species}}"/>
 
     <label for="quantity">Quantity</label>
-    <input type="number" name="quantity" value="{{newMove.quantity}}"/>
+    <input type="number" name="quantity" value="{{editMoves.quantity}}"/>
 
         {{!-- Dropdown menu for exhibit list --}}
     <label for="exhibit">Exhibit</label>
-      <select name="exhibit" value="{{newMove.exhibit}}">
+      <select name="exhibit" value="{{editMoves.exhibit}}">
         <option value="Aquanaut Adventure">Aquanaut Adventure</option>
         <option value="Cold Water Quest">Cold Water Quest</option>
         <option value="Dolphin Coast">Dolphin Coast</option>
@@ -29,11 +29,11 @@
     </select>
 
     <label for="date">Date</label>
-    <input type="date" name="date" value="{{newMove.date}}"/>
+    <input type="date" name="date" value="{{editMoves.date}}"/>
 
             {{!-- Dropdown menu for status --}}
     <label for="status">Status</label>
-      <select name="status" value="{{newMove.status}}">
+      <select name="status" value="{{editMoves.status}}">
         <option value="Pending">Pending</option>
         <option value="In Progress">In Progress</option>
         <option value="Shelved">Shelved</option>
@@ -42,7 +42,7 @@
 
               {{!-- Dropdown menu for priority --}}
     <label for="priority">Priority</label>
-      <select name="Priority" value="{{newMove.priority}}">
+      <select name="Priority" value="{{editMoves.priority}}">
         <option value="Urgent">P1</option>
         <option value="High">P2</option>
         <option value="Medium">P3</option>

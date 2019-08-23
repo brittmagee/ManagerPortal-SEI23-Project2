@@ -28,8 +28,8 @@ animalsRouter.get("/new", (req, res) => {
 })
 
 animalsRouter.get("/:moveId/edit", function(req, res){
-  animalsApi.getAnimalMove(req.params.moveId).then((allMoves) => {
-    res.render("./animals/editMove", {allMoves})
+  animalsApi.getAnimalMove(req.params.moveId).then((editMoves) => {
+    res.render("./animals/editMove", {editMoves})
   })
 })
 

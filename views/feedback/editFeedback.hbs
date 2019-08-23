@@ -1,28 +1,28 @@
-<form method="POST" action="/feedback/{{allFeedback._id}}?_method=PUT">
+<form method="POST" action="/feedback/{{editFeedback._id}}?_method=PUT">
 
     <label for="date">Date</label>
-    <input type="date" name="date" value="{{newFeedback.date}}"/>
+    <input type="date" name="date" value="{{editFeedback.date}}"/>
 
     {{!-- Dropdown menu for feedback type --}}
     <label for="type">Type</label>
-      <select name="type" value="{{newFeedback.type}}">
+      <select name="type" value="{{editFeedback.type}}">
         <option value="Exhibit">Exhibit</option>
         <option value="Event">Event</option>
         <option value="Other">Other</option>
     </select>
 
     <label for="title">Title</label>
-    <input type="text" name="title" value="{{newFeedback.title}}"/>
+    <input type="text" name="title" value="{{editFeedback.title}}"/>
 
     <label for="description">Description</label>
-    <input type="text" name="description" value="{{newFeedback.description}}"/>
+    <input type="text" name="description" value="{{editFeedback.description}}"/>
 
     <label for="staff">Staff Required</label>
-    <input type="number" name="staff" value="{{newFeedback.staff}}"/>
+    <input type="number" name="staff" value="{{editFeedback.staff}}"/>
 
         {{!-- Dropdown menu for status --}}
     <label for="status">Status</label>
-      <select name="status" value="{{newFeedback.status}}">
+      <select name="status" value="{{editFeedback.status}}">
         <option value="Pending">Pending</option>
         <option value="In Progress">In Progress</option>
         <option value="Shelved">Shelved</option>
@@ -31,7 +31,7 @@
 
             {{!-- Dropdown menu for priority --}}
     <label for="priority">Priority</label>
-       <select name="priority" value="{{newFeedback.priority}}"> 
+       <select name="priority" value="{{editFeedback.priority}}"> 
         <option value="Urgent">P1</option>
         <option value="High">P2</option>
         <option value="Medium">P3</option>
