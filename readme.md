@@ -31,5 +31,6 @@
 * Deployed online and accessible to the public via Heroku
 
 ### Wireframe & ERD Images
-![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png "Logo Title Text 1")
+![alt text](./Images/wireframe1 "Wireframe 1")
 
+![alt text](./Images/wireframe2 "Wireframe 2")
