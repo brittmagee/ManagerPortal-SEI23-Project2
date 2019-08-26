@@ -4,15 +4,29 @@
     <input type="submit" value="New Event" />
 </form>
 
-<ul>
-    {{!-- this will create an li for EACH item --}}
-    {{#each allAquariumEvents}} 
-    {{!-- above pass through --}}
-    <li>
-        {{!-- print out type of event you are looking for  --}}
-        {{!-- {{type}} --}}
-        <a href ="events/{{_id}}">{{title}}</a>  
-        {{!-- {{type}} --}}
-    </li>
-    {{/each}}
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Attendees</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Staff Required</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each allAquariumEvents}}
+        <tr>
+            <td><a href ="events/{{_id}}">{{date}}</a></td>
+            <td>{{type}}</td>
+            <td>{{attendees}}</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>{{location}}</td>
+            <td>{{staff}}</td>
+        </tr>
+    </tbody>
+     {{/each}}
+</table>
