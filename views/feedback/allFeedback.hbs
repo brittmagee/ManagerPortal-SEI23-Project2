@@ -3,16 +3,29 @@
 <form method="GET" action="/feedback/new">
     <input type="submit" value="New Feedback" />
 </form>
-
-<ul>
-    {{!-- this will create an li for EACH item --}}
-    {{#each allFeedback}} 
-    {{!-- above pass through --}}
-    <li>
-        {{!-- print out type of event you are looking for  --}}
-        {{!-- {{type}} --}}
-        <a href ="feedback/{{_id}}">{{title}}</a>  
-        {{!-- {{type}} --}}
-    </li>
-    {{/each}}
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Staff Needed</th>
+            <th>Status</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each allFeedback}}
+        <tr>
+            <td><a href ="feedback/{{_id}}">{{date}}</a></td>
+            <td>{{type}}</td>
+            <td>{{title}}</td>
+            <td>{{description}}</td>
+            <td>{{staff}}</td>
+            <td>{{status}}</td>
+            <td>{{priority}}</td>
+        </tr>
+    </tbody>
+     {{/each}}
+</table>
