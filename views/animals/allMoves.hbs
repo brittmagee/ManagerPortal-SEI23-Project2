@@ -3,16 +3,30 @@
 <form method="GET" action="/exhibit/new">
     <input type="submit" value="New Move" />
 </form>
-
-<ul>
-    {{!-- this will create an li for EACH item --}}
-    {{#each allAnimalMoves}} 
-    {{!-- above pass through --}}
-    <li>
-        {{!-- print out name of species you are looking for  --}}
-        {{!-- {{name}} --}}
-        <a href ="exhibit/{{_id}}">{{type}}</a>  
-        {{!-- {{species}} --}}
-    </li>
-    {{/each}}
-</ul>
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Species</th>
+            <th>Quantity</th>
+            <th>Exhibit</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{#each allAnimalMoves}}
+        <tr>
+            <td><a href ="exhibit/{{_id}}">{{type}}</a></td>
+            <td>{{species}}</td>
+            <td>{{quantity}}</td>
+            <td>{{exhibit}}</td>
+            <td>{{date}}</td>
+            <td>{{status}}</td>
+            <td>{{priority}}</td>
+        </tr>
+    </tbody>
+     {{/each}}
+</table>
+        
