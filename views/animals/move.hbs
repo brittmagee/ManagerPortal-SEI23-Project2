@@ -1,13 +1,29 @@
-<div>
-    <p>Move</p>
-    {{singleMove.type}}
-    {{singleMove.species}}
-    {{singleMove.quanity}} 
-    {{singleMove.exhibit}} 
-    {{singleMove.date}} 
-    {{singleMove.status}} 
-    {{singleMove.priority}} 
-</div>
+<h1>{{singleMove.species}}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Type</th>
+            <th>Species</th>
+            <th>Quantity</th>
+            <th>Exhibit</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{singleMove.type}}</td>
+            <td>{{singleMove.species}}</td>
+            <td>{{singleMove.quantity}}</td>
+            <td>{{singleMove.exhibit}}</td>
+            <td>{{singleMove.date}}</td>
+            <td>{{singleMove.status}}</td>
+            <td>{{singleMove.priority}}</td>
+        </tr>
+    </tbody>
+</table>
+        
 
 <form method="GET" action="/exhibit/{{singleMove._id}}/edit">
     <input type="submit" value="Edit" />

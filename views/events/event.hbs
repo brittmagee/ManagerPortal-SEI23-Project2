@@ -1,13 +1,29 @@
-<div>
-    <p>Event</p>
-    {{singleEvent.date}}
-    {{singleEvent.type}}
-    {{singleEvent.attendees}} 
-    {{singleEvent.title}} 
-    {{singleEvent.description}} 
-    {{singleEvent.location}} 
-    {{singleEvent.staff}} 
-</div>
+<h1>{{singleEvent.title}} </h1>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Attendees</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Location</th>
+            <th>Staff</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{singleEvent.date}}</td>
+            <td>{{singleEvent.type}}</td>
+            <td>{{singleEvent.attendees}} </td>
+            <td>{{singleEvent.title}} </td>
+            <td>{{singleEvent.description}} </td>
+            <td>{{singleEvent.location}} </td>
+            <td>{{singleEvent.staff}} </td>
+        </tr>
+    </tbody>
+</table>
+
 
 <form method="GET" action="/events/{{singleEvent._id}}/edit">
     <input type="submit" value="Edit" />

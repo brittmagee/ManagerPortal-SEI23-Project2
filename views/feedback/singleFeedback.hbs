@@ -1,13 +1,28 @@
-<div>
-    <p>Feedback</p>
-    {{singleFeedback.date}}
-    {{singleFeedback.type}}
-    {{singleFeedback.title}} 
-    {{singleFeedback.description}} 
-    {{singleFeedback.staff}} 
-    {{singleFeedback.status}} 
-    {{singleFeedback.priority}} 
-</div>
+<h1>{{singleFeedback.title}}</h1>
+<table>
+    <thead>
+        <tr>
+            <th>Date</th>
+            <th>Type</th>
+            <th>Title</th>
+            <th>Description</th>
+            <th>Staff Needed</th>
+            <th>Status</th>
+            <th>Priority</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{singleFeedback.date}}</td>
+            <td>{{singleFeedback.type}}</td>
+            <td>{{singleFeedback.title}}</td>
+            <td>{{singleFeedback.description}} </td>
+            <td>{{singleFeedback.staff}} </td>
+            <td>{{singleFeedback.status}} </td>
+            <td>{{singleFeedback.priority}} </td>
+        </tr>
+    </tbody>
+</table>
 
 <form method="GET" action="/feedback/{{singleFeedback._id}}/edit">
     <input type="submit" value="Edit" />
