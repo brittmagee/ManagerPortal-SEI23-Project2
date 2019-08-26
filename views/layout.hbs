@@ -1,0 +1,60 @@
+<!-- 
+  This is a template that contains HTML that should appear in every web page that your
+  sever generates. This is where you should import script files as well as link to any
+  CSS files. 
+-->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Manager's Portal</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+<header>
+    <a href="https://www.georgiaaquarium.org" target="_blank" class="ga"><img src="https://www.georgiaaquarium.org/wp-content/uploads/2018/07/georgia-aquarium-logo.svg"></a>
+    <h1>Manager's Portal</h1>
+    <div class="headerDiv">
+        <a href=""><h3 class="headerContent">Dashboard</h3></a> 
+        <a href=""><h3 class="headerContent">Account</h3></a> 
+        <a href=""><h3 class="headerContent">Directory</h3></a> 
+    </div>
+</header>
+        <div class="nav">
+            <a href="">Home</a> 
+            <a href="/exhibit/">Exhibits</a> 
+            <a href="/events/">Events</a>
+            <a href="/feedback/">Feedback</a>
+        </div>
+    <!--
+      This is a place holder for the contents of the .hbs file that is
+      rendered.
+    -->
+    {{{body}}}
+<footer>
+    <div>
+        <a href="https://www.georgiaaquarium.org" target="_blank"><img src="/gawhite.png"class="logo"/></a>
+        <div class="socialMedia">
+            <a href="http://www.facebook.com/georgiaaquarium" target="_blank"><img src="/fb.png" class="icons"></a>
+            <a href="http://instagram.com/georgiaaquarium" target="_blank"><img src="/ig.png" class="icons"></a>
+            <a href="http://twitter.com/georgiaaquarium" target="_blank"><img src="/twitter.jpg" class="icons"></a>
+            <a href="https://www.linkedin.com/company/georgia-aquarium" target="_blank"><img src="/linkedin.png" class="icons"></a>
+            <a href="https://www.pinterest.com/georgiaaquarium" target="_blank"><img src="/pinterest.png" class="icons"></a>
+        </div>
+        <div class="privacyPolicy">
+            <a href="https://www.georgiaaquarium.org/privacy-policy/" target="_blank"><p>Privacy & Terms</p></a>
+            <p>©2019 Georgia Aquarium</p>
+            <a href="https://www.google.com/maps/place/Georgia+Aquarium/@33.7638778,-84.3979549,17z/data=!4m5!3m4!1s0x88f5047e45f40419:0xfed77076a9af4adc!8m2!3d33.7633822!4d-84.3951099" target="_blank"><p>225 Baker Street Northwest, Atlanta, GA</p></a>
+        </div>
+    </div>
+    <div><img src="/map.jpg" class="map"/></div>
+    <div>
+        <a><p>Link 1</p></a>
+        <a><p>Link 2</p></a>
+        <a><p>Link 3</p></a>
+        <a><p>Link 4</p></a>
+        <a><p>Link 5</p></a>
+    </div>
+</footer>
+</body>
+</html>
