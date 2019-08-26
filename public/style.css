@@ -77,9 +77,11 @@ h1{
 }
 
 footer{
-    background-color:#111f9d;
+    background-color:#041757;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
+    margin: 0;
 }
 .logo{
     width: 250px;
@@ -115,5 +117,38 @@ footer{
 }
 
 .privacyPolicy a:hover{
+    color: goldenrod;
+}
+
+.footerLinks{
+    display: flex;
+    flex-direction: column;
+    padding-left: 40px;
+}
+
+.mission{
+    display: flex;
+    flex-direction: column;
+    padding-left: 170px;
+    color: white;
+}
+
+.slogan{
+    font-size: 14pt;
+    margin-top: 18px;
+    color: white;
+    line-height: 22px;
+    width: 400px;
+    margin-bottom: -8px;
+}
+
+.mission a{
+    text-decoration: none;
+    color: white;
+    line-height: 0px;
+    font-size: 10pt;
+}
+
+.mission a:hover{
     color: goldenrod;
 }
