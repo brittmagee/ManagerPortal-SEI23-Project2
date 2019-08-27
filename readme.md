@@ -35,4 +35,4 @@
 
 ![alt text](./public/wireframe2 "Wireframe 2")
 
-![alt text](./public/erd "ERD")
+![alt text](./public/erd.jpeg "ERD")
