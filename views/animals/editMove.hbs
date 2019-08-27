@@ -1,4 +1,19 @@
-<form method="POST" action="/exhibit/{{editMoves._id}}?_method=PUT">
+<div class="parent">
+<div class="profile">
+    <div class="pic">
+        <img src="/clauss.jpg" class="exampleProfile">
+        <h2>Tonya Clauss, DVM</h2>
+        <h4>Senior Director of Animal Health</h4>
+    </div>
+    <div>
+        <p>&#9993; tclauss@example.com</p>
+        <p>&#9742; 404-555-8972</p>
+        <p>&#9998; Edit</p>
+    </div>
+</div>
+<div class="allMovesContent">
+<h2>Edit : {{editMoves.species}}</h2>
+<form method="POST" action="/exhibit/{{editMoves._id}}?_method=PUT" class="newMoveForm">
 
         {{!-- Dropdown menu for animal type --}}
     <label for="type">Type</label>
@@ -49,9 +64,11 @@
         <option value="Low" {{dropdownHelper editMoves.priority "P4"}}>P4</option>
     </select>
 
-    <input type="submit" value="Update Move" />
+    <input type="submit" value="&#9998; Update" class="submitNewMove"/>
 </form>
 
-<form method="POST" action="/exhibit/{{move._id}}?method=DELETE">
-    <input type="submit" value="Delete"/>
+<form method="GET" action="/exhibit">
+    <input type="submit" value="&#8592; Back to Main List" />
 </form>
+</div>
+</div> 

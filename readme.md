@@ -31,6 +31,8 @@
 * Deployed online and accessible to the public via Heroku
 
 ### Wireframe & ERD Images
-![alt text](./Images/wireframe1 "Wireframe 1")
+![alt text](./public/wireframe1 "Wireframe 1")
 
-![alt text](./Images/wireframe2 "Wireframe 2")
+![alt text](./public/wireframe2 "Wireframe 2")
+
+![alt text](./public/erd "ERD")
