@@ -13,12 +13,11 @@ body,html {
 }
 
 header{
-    padding: 0;
     display: flex;
     flex-wrap: wrap;
     background-color: #4E7D91;
     justify-content: space-between;
-    height: 60px;
+    height: 70px;
 }
 
 /* dashboard,account and directory */
@@ -48,7 +47,7 @@ h1{
 }
 
 .headerDiv a:hover{
-    background-color: #ddd;
+    background-color: rgb(100, 130, 143);
     color: black;
 }
 
@@ -57,16 +56,18 @@ h1{
     display: flex;
     background-color: rgb(58, 82, 92);
     justify-content: flex-end;
-    position: sticky;
+    position: relative;
+    z-index: 100;
     top: 0;
     height: 40px;
-    padding-right: 25px;
+    padding-right: 30px;
     font-size: 13pt;
+    width: 100vw;
 }
 
 .nav a{
     color: white;
-    padding: 14px 20px;
+    padding: 14px 23px;
     text-decoration: none;
     text-align: center;
     border-left: 1px solid  #3f3d36;
@@ -166,6 +167,8 @@ footer{
 .allMovesContent{
     display: flex;
     flex-direction: column;
+    flex: 1;
+    padding: 0 12px;
 }
 /*Styling newMove button*/
 
@@ -265,4 +268,36 @@ tr:hover td{
     width: 230px;
     border-radius: 45%;
     margin-top: 15px;
+}
+
+/*Styling the table headers forthe single move page*/
+.singleMoveTable th{
+    color: white;
+}
+/*styling new move form*/
+.newMoveForm{
+    display: flex;
+    flex-direction: column;
+}
+.newMoveForm label{
+    font-size: 14pt;
+    padding: 10px 10px 5px 0px;
+    color:#3d768a;
+}
+
+.newMoveForm select{
+    font-size: 12pt;
+    width: 100px;
+    cursor: pointer;
+}
+
+.newMoveForm input{
+    font-size: 12pt;
+    width: 200px;
+}
+.submitNewMove{
+    font-size: 12pt;
+    margin-top: 30px;
+    cursor: pointer;
+    color:rgb(49, 78, 90);
 }
