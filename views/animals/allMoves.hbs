@@ -1,18 +1,35 @@
-<h1>All Exhibit Moves</h1>
+<div class="parent">
+<div class="profile">
+    <div class="pic">
+        <img src="/clauss.jpg" class="exampleProfile">
+        <h2>Tonya Clauss, DVM</h2>
+        <h4>Senior Director of Animal Health</h4>
+    </div>
+    <div>
+        <p>&#9993; Email</p>
+        <p>&#9742; Phone</p>
+        <p>&#9998; Edit</p>
+    </div>
+    <div>
 
-<form method="GET" action="/exhibit/new">
-    <input type="submit" value="New Move" />
+    </div>
+
+</div>
+<div class="allMovesContent">
+<h2>All Exhibit Moves</h2>
+<form method="GET" action="/exhibit/new" class="buttonForm">
+    <input type="submit" value="+" class="newMoveButton" />
 </form>
-<table>
+<table class="allMovesTable">
     <thead>
         <tr>
-            <th>Type</th>
-            <th>Species</th>
-            <th>Quantity</th>
-            <th>Exhibit</th>
-            <th>Date</th>
-            <th>Status</th>
-            <th>Priority</th>
+            <th class="allMovesColumns">Type</th>
+            <th class="allMovesColumns">Species</th>
+            <th class="allMovesColumns">Quantity</th>
+            <th class="allMovesColumns">Exhibit</th>
+            <th class="allMovesColumns">Date</th>
+            <th class="allMovesColumns">Status</th>
+            <th class="allMovesColumns">Priority</th>
         </tr>
     </thead>
     <tbody>
@@ -26,7 +43,8 @@
             <td>{{status}}</td>
             <td>{{priority}}</td>
         </tr>
-    </tbody>
      {{/each}}
+    </tbody>
 </table>
-        
+</div>
+</div> 

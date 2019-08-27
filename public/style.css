@@ -1,9 +1,12 @@
+/* main css styling for header and footer */
 body,html {
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+    /* font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif */
+    font-family: 'Livvic', sans-serif;
 }
 
+/* GA Aquarium title */
 .ga{
     display: flex;
     padding: 0 0 10px 10px;
@@ -13,31 +16,35 @@ header{
     padding: 0;
     display: flex;
     flex-wrap: wrap;
-    background-color: #1d2bed;
+    background-color: #4E7D91;
     justify-content: space-between;
     height: 60px;
 }
 
+/* dashboard,account and directory */
 .headerDiv{
     display: flex;
-    background-color:#111f9d;
+    background-color:#5F6291;
     margin-right: -10px;
 }
 
+/* dashboard,account and directory text*/
 h3{
     margin: 18px 0;
     padding-left: 25px;
 }
 
+/*Manager's portal font*/
 h1{
-    font-family: Garamond;
+    font-family: 'Livvic', sans-serif;
+    font-style: italic;
     letter-spacing: .83px;
 }
 
 .headerDiv a{
     color: white;
     text-decoration: none;
-    padding: 0 21px 0 0;
+    padding: 0 38px 0 0;
 }
 
 .headerDiv a:hover{
@@ -45,9 +52,10 @@ h1{
     color: black;
 }
 
+/*sticky nav bar for easy access to data pages*/
 .nav{
     display: flex;
-    background-color: goldenrod;
+    background-color: rgb(58, 82, 92);
     justify-content: flex-end;
     position: sticky;
     top: 0;
@@ -57,27 +65,27 @@ h1{
 }
 
 .nav a{
-    color:#111f9d;
+    color: white;
     padding: 14px 20px;
     text-decoration: none;
     text-align: center;
-    border-left: 2px solid white;
+    border-left: 1px solid  #3f3d36;
 }
 
 .nav a:hover {
-    background-color: #111f9d;
+    background-color: #999688;
     color: white;
-    border-top: 1px solid goldenrod;
+    border-top: 1px solid #999688;
 }
 
 .map{
-    width:auto; /* you can use % */
+    width:auto; 
     height: 270px;
     margin-left: 30px;
 }
 
 footer{
-    background-color:#041757;
+    background-color:rgb(49, 78, 90);
     display: flex;
     flex-wrap: wrap;
     padding: 10px;
@@ -89,12 +97,14 @@ footer{
     object-fit: cover;
 }
 
+
 .socialMedia{
     display: flex;
     vertical-align: baseline;
     justify-content: space-evenly;
 }
 
+/* social media icon links */
 .icons{
     width: auto;
     height: 30px;
@@ -151,4 +161,108 @@ footer{
 
 .mission a:hover{
     color: goldenrod;
+}
+
+.allMovesContent{
+    display: flex;
+    flex-direction: column;
+}
+/*Styling newMove button*/
+
+.newMoveButton{
+    border-radius:50%;
+    cursor: pointer;
+    background-color:#999688;
+	color:white;
+	font-size:28px;
+	padding:4px 12px;
+	text-decoration:none;
+    float: left;
+    margin: 5px 15px 5px 5px;
+}
+
+.newMoveButton:hover{
+    background-color: #3d768a;
+}
+
+/*Visited anchor links; remove purple default*/
+td a:visited{ 
+    text-decoration: none; 
+    color:white;
+}
+td a{
+    color: white;
+}
+
+/* styling for allMoves.hbs */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.allMovesTable{
+    margin: 0 0 20px 0;
+    border-radius: 10px;
+    overflow-x: auto;
+}
+
+.allMovesColumns{
+    padding: 2px 6px;
+    text-align: center;
+}
+
+th{
+    background-color: rgb(49, 78, 90);
+    color: black;
+    font-weight: 900;
+    line-height: 25px;
+    font-size: 13pt;
+}
+
+td{
+    padding: 2px 6px;
+    text-align: center;
+    font-size: 14pt;
+    border-bottom: 1px solid #ddd;
+}
+
+td a{
+    text-decoration: none;
+}
+
+/*Every other row is a difefrent color in table*/
+tbody tr:nth-child(even){
+    background-color: rgb(107, 141, 156);
+}
+
+tbody tr:nth-child(odd){
+    background-color: rgb(71, 121, 143);
+}
+
+ /*when hovering over the item, the row highlights*/
+tr:hover td{
+    background-color: #999688;
+}
+
+/*parent code for profile and table layout*/
+
+.parent{
+    width: 100vw;
+    position: relative;
+    z-index: 200;
+    display: flex;
+}
+
+.profile{
+    width: 280px;
+    border-right: 1px solid #212121;
+    padding: 0 14px;
+    background-color: #5F6291;
+    text-align: center;
+}
+.exampleProfile{
+    width: 230px;
+    border-radius: 45%;
+    margin-top: 15px;
 }
