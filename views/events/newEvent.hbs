@@ -1,4 +1,19 @@
-<form method="POST" action="/events">
+<div class="parent">
+<div class="profile">
+    <div class="pic">
+        <img src="/rivera.jpg" class="exampleProfile">
+        <h2>Anthony Rivera</h2>
+        <h4>Vice President | Guest Experience & Hospitality</h4>
+    </div>
+    <div>
+        <p>&#9993; arivera@example.com</p>
+        <p>&#9742; 404-555-9728</p>
+        <p>&#9998; Edit</p>
+    </div>
+</div>
+<div class="allMovesContent">
+<h2>New Event</h2>
+<form method="POST" action="/events" class="newMoveForm">
 
     <label for="date">Date</label>
     <input type="date" name="date"/>
@@ -37,9 +52,11 @@
     <label for="staff">Staff Needed</label>
     <input type="number" name="staff"/>
 
-    <input type="submit" value="Submit Event" />
+    <input type="submit" value="Submit Event" class="submitNewMove"/>
 </form>
 
 <form method="GET" action="/events">
     <input type="submit" value="&#8592; Back to Main Event List" />
 </form>
+</div>
+</div> 
