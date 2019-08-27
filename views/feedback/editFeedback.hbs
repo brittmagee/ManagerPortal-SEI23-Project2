@@ -1,4 +1,19 @@
-<form method="POST" action="/feedback/{{editFeedback._id}}?_method=PUT">
+<div class="parent">
+<div class="profile">
+    <div class="pic">
+        <img src="/hoopes.jpg" class="exampleProfile">
+        <h2>Lisa Hoopes,  Ph.D.</h2>
+        <h4>Director of Research | Conservation and Nutrition</h4>
+    </div>
+    <div>
+        <p>&#9993; lhoopes@example.com</p>
+        <p>&#9742; 404-555-7289</p>
+        <p>&#9998; Edit</p>
+    </div>
+</div>
+<div class="allMovesContent">
+<h2>Edit : {{editFeedback.title}}</h2>
+<form method="POST" action="/feedback/{{editFeedback._id}}?_method=PUT" class="newMoveForm">
 
     <label for="date">Date</label>
     <input type="date" name="date" value="{{editFeedback.date}}"/>
@@ -38,9 +53,11 @@
         <option value="Low" {{dropdownHelper editFeedback.priority "Low"}}>P4</option>
     </select>
 
-    <input type="submit" value="Update Feedback" />
+    <input type="submit" value="Update Feedback" class="submitNewMove"/>
 </form>
 
 <form method="GET" action="/feedback">
     <input type="submit" value="&#8592; Back to Feedback List" />
 </form>
+</div>
+</div> 
