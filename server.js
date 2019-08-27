@@ -1,8 +1,8 @@
 // Step 1: Import needed packages
-const express  = require("express")
-const app            = express()
+const express = require("express")
+const app = express()
 const methodOverride = require("method-override")
-const hbs            = require("hbs")
+const hbs = require("hbs")
 const hbsHepler = require("./hbsHelpers/hbsHelpers")
 
 // Step 2: import routers from controllers/
@@ -30,6 +30,9 @@ app.set("view engine", "hbs")
 app.use('/exhibit', animalsRouter)
 app.use('/events', eventsRouter)
 app.use('/feedback', feedbackRouter)
+app.get('/', function(req, res){
+      res.render("home", {});
+})
 
 // Step 5: Set the port the server is to run on
 //NOTE: keep these lines at the bottom of the file 
