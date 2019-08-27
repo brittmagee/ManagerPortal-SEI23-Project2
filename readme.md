@@ -1,6 +1,6 @@
 # Georgia Aquarium: _Managers Portal_
 
-### This site is designed to allow the exhibit managers to update....
+### This site is designed to allow the leadership personnel and exhibit managers to view, create, delete, and update the animal exhibits and events for the Georgia Aquarium. The site also provides a platform for managers to give feedback to the GA team members. Given the Georgia Aquarium's commitment to research, conservation and sharing the amazing world of undersea life with the public, this site is designed to increase efficency and communication between team members. 
 
 ##### Important Links:
 [**Deployed Site**](www.google.com)
@@ -22,17 +22,17 @@
 
 #### This application has: 
 
-* Three models – one representing someone using the application (a user), one representing a collection of projects (a portfolio) and a third model for the individual projects (a project).
-* Complete RESTful routes for at least one resource (a project) with GET, POST, PUT, and DELETE.
+* Three models – one that enables a manager to add/remove animals to the various exhibits, one that enables a manager to view/edit the upcoming events, and a third model that enables managers to provide feedback geared towards the safety of the exhibit animals.
+* Complete RESTful routes for each of the modles with GET, POST, PUT, and DELETE.
 * Uses Mongo queries and the Mongoose module to interact with a document database.
-* Promises to help build more complex queries!
+* CSS styling to mimic an actual manager's portal platform.
 * Wireframes that were designed during the planning process.
-* ERDs
+* ERD
 * Deployed online and accessible to the public via Heroku
 
 ### Wireframe & ERD Images
-![alt text](./public/wireframe1 "Wireframe 1")
+![wireframe 1](./public/wireframe1 "Wireframe 1")
 
-![alt text](./public/wireframe2 "Wireframe 2")
+![wireframe 2](./public/wireframe2 "Wireframe 2")
 
-![alt text](./public/erd.jpeg "ERD")
+![ERD](./public/erd.jpeg "ERD")
