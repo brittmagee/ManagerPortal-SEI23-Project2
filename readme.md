@@ -3,7 +3,7 @@
 #### This site is designed to allow the leadership personnel and exhibit managers to view, create, delete, and update the animal exhibits and events for the Georgia Aquarium. The site also provides a platform for managers to give feedback to the GA team members. Given the Georgia Aquarium's commitment to research, conservation and sharing the amazing world of undersea life with the public, this site is designed to increase efficency and communication between team members. 
 
 ##### Important Links:
-[**Deployed Site**](www.google.com)
+[**Deployed Site**](https://pacific-spire-28763.herokuapp.com/)
 
 [GitHub Link](https://github.com/brittmagee/SEI23-Project2)
 
