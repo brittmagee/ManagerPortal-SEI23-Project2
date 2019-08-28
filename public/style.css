@@ -35,8 +35,9 @@ h3{
 
 /*Manager's portal font*/
 h1{
-    font-family: 'Livvic', sans-serif;
-    font-style: italic;
+    /* font-family: 'Livvic', sans-serif; */
+    font-family: 'Exo', sans-serif;
+
     letter-spacing: .83px;
 }
 
@@ -329,17 +330,23 @@ tr:hover td{
     background-image: url("background7.jpg");
     width: 100%;
     height: 480px;
-    margin: 3px 0;
-    display: grid;
+    padding: 10px 0;
+}
+.icon-container {
+    display: flex;
     justify-content: center;
-    align-items: center;
-    grid-template-rows: 10% 40% 10% 40%;
+    margin-bottom: -15px;
 }
 
 .dashboardTitle{
-    grid-row-start: 1;
-    grid-row-end: 2;
     text-align: center;
+    font-size: 28pt;
+    color: goldenrod;
+    margin: 0px auto;
+    padding: 10px 5px;
+    background-color: #0c191d;
+    width: 400px;
+    border-radius: 10px;
 }
 
 .homeIcons{
@@ -348,8 +355,6 @@ tr:hover td{
     border-radius: 35%;
     height: 80px;
     padding: 15px;
-    grid-row-start: 2;
-    grid-row-end: 3;
     text-align: center;
 }
 
@@ -367,8 +372,13 @@ h2:hover{
 
 .highlightedTitle{
     text-align: center;
-    grid-row-start: 3;
-    grid-row-end: 4;
+    font-size: 28pt;
+    color:goldenrod;
+    margin: 10px auto;
+    padding: 10px 5px;
+    background-color: #0c191d;
+    width: 400px;
+    border-radius: 10px;
 }
 .homeIcons a{
     text-decoration: none;
@@ -382,7 +392,6 @@ h2:hover{
     margin-bottom: -15px;
     margin-left: auto;
     margin-right: auto;
-    display: block;
 }
 /*placing a white filter over zoom icon image*/
 .zoomIcon{
@@ -400,12 +409,6 @@ h2:hover{
     height: 60px;
     font-size: 6pt;
     background-color: #999688;
-    display: flex;
-    flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row;
-    grid-row-start: 4;
-    grid-row-end: 5;
     justify-content: center;
     align-items: center;
 }
