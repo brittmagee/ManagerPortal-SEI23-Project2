@@ -83,7 +83,7 @@ h1{
 .map{
     width:auto; 
     height: 270px;
-    margin-left: 30px;
+    margin-left: 40px;
 }
 
 footer{
@@ -135,13 +135,29 @@ footer{
 .footerLinks{
     display: flex;
     flex-direction: column;
-    padding-left: 40px;
+    padding-left: 80px;
+    color: #183038;
+    text-align: center;
+    line-height: 2pt;
+    margin-top: 40px;
+    font-size: 14pt;
 }
+
+.footerLinks a{
+    text-decoration: none;
+    color:#0c191d;;
+}
+
+.footerLinks a:hover{
+    text-decoration: none;
+    color: goldenrod
+}
+
 
 .mission{
     display: flex;
     flex-direction: column;
-    padding-left: 170px;
+    padding-left: 100px;
     color: white;
 }
 
